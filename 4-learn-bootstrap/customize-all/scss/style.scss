@@ -1,0 +1,72 @@
+// sass variable overide
+
+    // $body-bg: rgb(233, 192, 192);
+    // $body-color: rgb(0, 0, 0);
+
+    // $enable-dark-mode: true;
+    // $enable-rounded: false;
+    // $spacer: 1rem;
+
+// overide map 
+    // $theme-colors: (
+    //   "primary":    orange,
+    //   "secondary":  black,
+    //   "kwt": rgb(216, 59, 190)
+    // //   "success":    $success,
+    // //   "info":       $info,
+    // //   "warning":    $warning,
+    // //   "danger":     $danger,
+    // //   "light":      $light,
+    // //   "dark":       $dark
+    // );
+
+// // customize btn 
+    // $btn-padding-x: 20px;
+    // $btn-padding-y: 7px;
+    // $btn-font-size: 14px;
+    // $btn-border-width: 3px;
+    // $btn-border-radius: 10px;
+
+// customize form-control
+    // $input-bg: rgb(255, 214, 214);
+    // $input-border-radius: none;
+    // $input-focus-bg: rgb(248, 166, 179);
+    // $input-padding-x: 20px;
+    // $input-padding-y: 10px;
+
+// customize form-select 
+    $form-select-indicator: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-arrow-down-square" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 2.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/></svg>');
+
+// customize carousel
+    $carousel-control-width: 5%;
+    $carousel-control-color: rgb(118, 240, 57);
+    $carousel-control-opacity: 1;
+    $carousel-control-hover-opacity: .7;
+    $carousel-control-prev-icon-bg: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#{$carousel-control-color}" class="bi bi-arrow-bar-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5ZM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5Z"/></svg>');
+    $carousel-control-next-icon-bg: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#{$carousel-control-color}" class="bi bi-arrow-bar-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8Zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5Z"/></svg>');
+    $carousel-indicator-active-bg: rgb(17, 217, 227);
+    $carousel-indicator-spacer: 1rem;
+    $carousel-indicator-width: 2.4rem;
+    $carousel-indicator-height: .5rem;
+
+// customize accordion
+    $accordion-color: rgb(255, 0, 174);
+    $accordion-button-padding-y: .8rem;
+    $accordion-button-color: rgb(52, 207, 124);
+    $accordion-button-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-bag-plus-fill" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5V8z"/></svg>');
+    $accordion-button-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="brown" class="bi bi-calendar-minus-fill" viewBox="0 0 16 16"><path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zM6 10h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1 0-1z"/></svg>');
+
+// customize spacer 
+    $spacer: 1rem;
+    $spacers: (
+    0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+    6: $spacer * 4,
+    7: $spacer * 6
+    );
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

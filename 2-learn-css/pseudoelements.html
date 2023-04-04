@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style type="text/css">
+        h1{
+            color: deeppink;
+        }
+        h1::before{
+            /* content: 'AAA '; */
+            /* content: url('https://www.w3schools.com/css/smiley.gif'); */
+            content: '';
+            display: inline-block;
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: darkcyan;
+            margin-right: 10px;         
+        }
+        h1::after{
+            content: " BBB";
+            color: rgb(255, 153, 0);
+        }
+
+        /* .box{
+            width: 150px;
+            height: 150px;
+            background-color: skyblue;
+        } */
+
+        /* .box{
+            display: inline-block;
+            padding: 75px;
+            background-color: skyblue
+        } */
+
+        /* .box{
+            display: inline-block;
+            border: 75px solid skyblue;
+            border-style: solid;
+            border-top-width: 100px;
+            border-left-width: 50px;
+            border-right-width: 20px;
+            border-top-color: red;
+            border-right-color: rgb(255, 255, 0);
+            border-bottom-color: rgb(166, 255, 0);
+            border-left-color: rgb(62, 62, 248);
+        } */
+
+        div.box{
+            width: 250px;
+            height: 250px;
+            background-color: skyblue;
+            position: relative;
+        }
+        div.box::before{
+            content:'';
+            /* display: inline-block; */
+            border: 50px solid rgb(20, 108, 142);
+            border-bottom-color: white;
+            border-right-color: white;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .dialog{
+            display: inline-block;
+            width: 350px;
+            background-color: pink;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .dialog::before{
+            content:"";
+            border: 10px solid rgb(255, 255, 255);
+            border-top-color: pink;
+            position: absolute;
+            left: 50px;
+            bottom: -19px;
+        }
+
+        .dialog h3{
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        .dialog p{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello</h1>
+    <hr>
+    <div class="box"></div>
+    <br><hr><br>
+    <div class="dialog">
+        <h3>Hello World</h3>
+        <p>Min ga lar pr</p>
+    </div>
+</body>
+</html>

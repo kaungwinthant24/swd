@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <span>this is for element</span>
+    this is for node (text)
+    <ul class="numbers">
+      <li id="one">one</li>
+      <li id="two">two</li>
+      <li id="three">three</li>
+      <li id="four">four</li>
+    </ul>
+    <script>
+      //   const h1 = document.createElement("h1");
+      //   h1.innerText = "Document Element";
+      //   document.body.append(h1);
+
+      //   const p = document.createElement("p");
+      //   p.innerText =
+      //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illum reiciendis ducimus, blanditiis numquam aspernatur ipsam consequatur. Quidem aut porro provident corporis eveniet id amet, libero recusandae veritatis excepturi error?";
+      //   document.body.append(p);
+
+      //   const ul = document.createElement("ul");
+      //   function createLi(text) {
+      //     const li = document.createElement("li");
+      //     li.innerText = text;
+      //     return li;
+      //   }
+      //   document.body.append(ul);
+      //   ul.append(createLi("Apple"));
+      //   ul.append(createLi("Banana"));
+      //   ul.append(createLi("Mango"));
+
+      //   const a = document.createElement("a");
+      //   a.innerText = "Go to Google";
+      //   a.href = "https://google.com";
+      //   document.body.append(a);
+
+      //   const img = document.createElement("img");
+      //   img.src = "./luffy.png";
+      //   img.width = "400";
+      //   img.style.display = "block";
+      //   document.body.append(img);\
+
+      // ----------------------
+
+      //   const box = document.createDocumentFragment();
+
+      //   const h1Frag = document.createElement("h1");
+      //   h1Frag.innerText = "Heading in Fragment";
+
+      //   const pFrag = document.createElement("p");
+      //   pFrag.innerText = "Paragraph in Fragment";
+
+      //   const ulFrag = document.createElement("ul");
+      //   function createLiFrag(text) {
+      //     const liFrag = document.createElement("li");
+      //     liFrag.innerText = text;
+      //     return liFrag;
+      //   }
+      //   ulFrag.append(createLiFrag("One"));
+      //   ulFrag.append(createLiFrag("Two"));
+      //   ulFrag.append(createLiFrag("Three"));
+
+      //   box.append(h1Frag);
+      //   box.append(pFrag);
+      //   box.append(ulFrag);
+
+      //   true && document.body.append(box);
+
+      // ----------------------
+
+      //   const one = document.createElement("p");
+      //   one.innerText = "one";
+      //   document.body.append(one);
+      //   const two = document.createElement("p");
+      //   two.innerText = "two";
+      //   document.body.append(two);
+      //   const prepend = document.createElement("p");
+      //   prepend.innerText = "This is Prepend";
+      //   document.body.prepend(prepend);
+
+      // ----------------------
+
+      //   const parent = document.querySelector(".numbers");
+      //   parent.remove();
+      //   parent.removeChild(parent.children[0]);
+
+      // ----------------------
+      const ul = document.querySelector("ul");
+      // console.log(ul.children);  // Html Collection
+      // console.log(ul.childNodes); // Node List
+      // console.log(ul.previousSibling);
+      // ul.previousSibling.data = "A node";
+      // console.log(ul.previousElementSibling);
+      // ul.previousElementSibling.innerText = "An element ";
+
+      const createNode = document.createTextNode("I am text node");
+      // ul.before(createNode);
+      // ul.after(createNode);
+    </script>
+  </body>
+</html>

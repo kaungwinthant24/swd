@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 2</title>
+</head>
+<body>
+    <h3>HTML Form</h3>
+
+    <fieldset>
+        <legend>Register</legend>
+
+        <form action="https://mms-it.com" method="get" enctype="multipart/form-data">
+
+            <!-- input elements -->
+
+            <label for="name">Name : </label>
+            <input type="text" id="name" name="your_name" placeholder="Enter Username" />
+
+            <br/>
+
+            <label for="email">Email : </label>
+            <input type="email" id="email" name="email" value="@gmail.com" required autofocus />
+
+            <br/>
+
+            <label for="password">Password : </label>
+            <input type="password" id="password" name="password">
+
+            <br/>
+
+            <hr/>
+            
+            <label for="gender">Gender : </label>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male_gender" />
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female_gender">
+
+            <hr/>
+
+            <label for="">Skills : </label>
+
+            <input type="checkbox" id="html" name="skill" value="html" />
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="css" name="skill" value="css" />
+            <label for="css">Css</label>
+
+            <input type="checkbox" id="js" name="skill" value="js" />
+            <label for="js">JavaScript</label>
+
+            <input type="checkbox" id="php" name="skill" value="php" />
+            <label for="php">PHP</label>
+
+            <hr/>
+
+            <label for="nationality">Nationality</label>
+            <select name="nationality" id="nationality">
+                <option value="mm">Myanmar</option>
+                <option value="th">Thailand</option>
+                <option value="jp">Japan</option>
+                <option value="ch">China</option>
+                <option value="us">United State</option>
+            </select>
+
+            <hr/>
+            
+            <label for="address">Address</label><br/>
+            <textarea name="address" id="address" cols="40" rows="5"></textarea>
+
+            <hr/>
+
+            <label for="media">Photo</label>
+            <input type="file" id="media" accept="image/jpeg,video/mp4" multiple />
+
+            <hr/>
+
+            <label for="volume">Volume</label>
+            <input type="range" id="volume" name="volume" min="0" max="100" value="40" step="20" />
+
+            <hr/>
+
+            <input type="submit" />
+            <!-- <input type="button" value="Button"/>
+            <button type="submit">Button tag with submit</button> -->
+
+        </form>
+    </fieldset>
+
+    <hr/>   
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Job</th>
+            </tr>
+        </thead>
+        <tbody> 
+            <tr>
+                <td>1</td>
+                <td>Kaung Win Thant</td>
+                <td>09 123456</td>
+                <td rowspan="2">Developer</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mg Mg</td>
+                <td>09 123457</td>
+                <!-- <td>Developer</td> -->
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ag Ag</td>
+                <td>09 123458</td>
+                <td rowspan="2">Marketing</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Kyaw Kyaw</td>
+                <td>09 123459</td>
+                <!-- <td>Marketing</td> -->
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Kyaw Kyaw</td>
+                <td>09 123450</td>
+                <td>Promoter</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Kyaw Kyaw</td>
+                <td>09 123451</td>
+                <td>Waiter</td>
+            </tr>
+            <tr align="center">
+                <td colspan="3">Total</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+
+    <hr/>
+
+    <h3>Unorder List</h3>
+    <ul>
+        <li>Apple</li>
+            <ol>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ol>
+        <li>Orange</li>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Grep</li>
+    </ul>
+
+    <h3>Order List</h3>
+    <ol>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Grep</li>
+    </ol>
+</body>
+</html>

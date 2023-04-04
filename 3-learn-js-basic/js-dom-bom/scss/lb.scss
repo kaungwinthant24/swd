@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+// custom
+$font-family-sans-serif: "Montserrat", sans-serif;
+$enable-rounded: false;
+// $input-disabled-border-color: null;
+$input-focus-box-shadow: none;
+$input-focus-border-color: none;
+$form-check-input-checked-bg-color: black;
+$form-check-input-focus-box-shadow: none;
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

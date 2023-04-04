@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .box{
+            background-color: black;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            transition-duration: 3s,2s;
+            transition-property: background-color,color;
+            transition-delay: 1s;
+        }
+
+        .box:hover{
+            background-color: blueviolet;
+            color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">HEllo World</div>
+</body>
+</html>

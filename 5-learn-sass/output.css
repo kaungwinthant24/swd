@@ -1,0 +1,60 @@
+.header {
+  background-color: black;
+  color: "pink";
+}
+
+.footer {
+  background-color: "pink";
+  color: black;
+}
+
+.bg-primay {
+  background-color: "pink";
+}
+
+.text-primary {
+  color: "pink";
+}
+
+.border-primary {
+  border-color: "pink";
+}
+
+.navbar:hover {
+  box-shadow: 0 0 5px;
+}
+.navbar .navbar-brand {
+  color: black;
+}
+.navbar .navbar-nav {
+  color: black;
+}
+.navbar .navbar-nav .nav-item {
+  border: 1px solid black;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  color: black;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover, .navbar .navbar-nav .nav-item .nav-link:active {
+  color: pink;
+}
+
+.btn-primary {
+  background-color: blue;
+  color: black;
+  border: 1px soild brown;
+}
+
+.btn-secondary {
+  background-color: tomato;
+  color: black;
+  border: 1px soild brown;
+}
+
+.btn-warning {
+  background-color: gold;
+  color: black;
+  border: 1px soild brown;
+}
+
+/*# sourceMappingURL=output.css.map */

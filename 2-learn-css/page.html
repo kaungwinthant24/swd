@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <a href="" class="brand">My Brand</a>
+        <button class="nav-toggler"><i class="fa-solid fa-bars"></i></button>
+        <nav class="open">
+            <a href="" class="nav-link active">Home</a>
+            <a href="" class="nav-link">About</a>
+            <a href="" class="nav-link">Services</a>
+            <a href="" class="nav-link">Profile</a>
+            <a href="" class="nav-link">Contact Us</a>
+        </nav>
+    </header>
+    
+    <section>
+        <form action="" method="get" class="form">
+            <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Eg. Kaung Win Thant" />
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Login email</label>
+                <input type="email" id="email" name="email" class="form-control"  placeholder="Eg. kwt123@gmail.com" />
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" name="password" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label for="password_confirmation" class="form-label">Confirm Password</label>
+                <input type="password" id="password_confirmation" name="password_confirmation" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label for="address" class="form-label">Your Address</label>
+                <textarea name="address" id="address" cols="20" rows="10"></textarea>
+            </div>
+
+            <div class="form-check">
+                <div class="check-group">
+                    <input type="checkbox" id="confirm" name="confirm" class="confirm" >
+                    <label for="confirm">i accept rules</label>
+                </div>
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Off Camvas</title>
+    <style>
+        .sidebar{
+            background-color: grey;
+            width: 200px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            /* display: none; */
+            transform: translateX(-90%);
+            transition-duration: 1.5s;
+            transition-property: transform;
+        }
+        .sidebar.open{
+            /* display: block; */
+            transform: translateX(0%);
+            
+        }
+
+        .sidebar.open::after{
+            content: '';
+            width: 1000vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.4);
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <button>Show</button>
+    <h1>Hello World</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos pariatur numquam labore velit maxime unde perferendis, dolorem consequatur tempora est praesentium quos sequi, distinctio ipsam officia veniam suscipit nam quisquam?</p>
+    <div class="sidebar">
+
+    </div>
+</body>
+</html>

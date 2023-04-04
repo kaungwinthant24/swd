@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Examples</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        .box{
+            width: 800px;
+            background-color: lightblue;
+            margin: 20px;
+            padding: 20px;
+
+        }
+
+        /* .box:nth-child(1){
+            animation: zoom 0.5s linear both;
+        }
+
+        .box:nth-child(2){
+            animation: zoom 0.5s .3s linear both;
+        }
+
+        .box:nth-child(3){
+            animation: zoom 0.5s .6s linear both;
+        } */
+
+
+        /* @keyframes slide{
+            from{
+                transform: translateX(-200%);
+            }
+            to{
+                transform: translateX(0%);
+            }
+        }
+
+        @keyframes down{
+            from{
+                transform: translateY(-500%);
+            }
+            to{
+                transform: translateY(0%);
+            }
+        }
+
+        @keyframes zoom{
+            from{
+                transform: translateX(-200%) scale(0);
+            }
+            to{
+                transform: translateX(0%) scale(1);
+            }
+        } */
+
+        .love{
+            display: block;
+            width: 200px;
+        }
+        
+        .scroll-to-top{
+            width: 40px;
+            height: 40px;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 40px;
+            position: fixed;
+            bottom: 10px;
+            right: 14px;
+            background-color: pink;
+            color: rgb(21, 25, 127);
+        }
+    </style>
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="./node_modules/imagehover.css/css/imagehover.min.css">
+</head>
+<body>
+    <h1 id="top">animation test</h1>
+    <div class="box animate__animated animate__fadeInUp animate__slow animate__repeat-3">
+        <h1>Hello! How are you?</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam dignissimos dolor, nihil magnam expedita minima placeat doloremque dolore veniam? Magnam nam iure amet placeat ut accusamus, quidem dolor consectetur cumque.</p>
+    </div>
+
+    <div class="box animate__animated animate__fadeInUp animate__delay-1s animate__repeat-3">
+        <h1>Hello! How are you?</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam dignissimos dolor, nihil magnam expedita minima placeat doloremque dolore veniam? Magnam nam iure amet placeat ut accusamus, quidem dolor consectetur cumque.</p>
+    </div>
+
+    <div class="box animate__animated animate__fadeInUp animate__delay-2s animate__faster animate__repeat-3">
+        <h1>Hello! How are you?</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam dignissimos dolor, nihil magnam expedita minima placeat doloremque dolore veniam? Magnam nam iure amet placeat ut accusamus, quidem dolor consectetur cumque.</p>
+    </div>
+
+    <hr>
+
+    <figure class="imghvr-fade">
+        <img class="love" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdreWhBm5Z58wVBmL8tndw55P2GBm0vx1NcQ&usqp=CAU">
+        <figcaption>
+          <h3>Hello Love</h3>
+          <p>ayan chit tl</p>
+        </figcaption>
+        <a href="http://www.imagehover.io"></a>
+      </figure>
+
+      <figure class="imghvr-hinge-up">
+        <img class="love" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdreWhBm5Z58wVBmL8tndw55P2GBm0vx1NcQ&usqp=CAU">
+        <figcaption>
+          <h3>Hello Love</h3>
+          <p>ayan chit tl</p>
+        </figcaption>
+        <a href="http://www.imagehover.io"></a>
+      </figure>
+
+      <figure class="imghvr-flip-diag-1">
+        <img class="love" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdreWhBm5Z58wVBmL8tndw55P2GBm0vx1NcQ&usqp=CAU">
+        <figcaption>
+          <h3>Hello Love</h3>
+          <p>ayan chit tl</p>
+        </figcaption>
+        <a href="http://www.imagehover.io"></a>
+      </figure>
+
+      <figure class="imghvr-zoom-out-flip-vert">
+        <img class="love" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdreWhBm5Z58wVBmL8tndw55P2GBm0vx1NcQ&usqp=CAU">
+        <figcaption>
+          <h3>Hello Love</h3>
+          <p>ayan chit tl</p>
+        </figcaption>
+        <a href="http://www.imagehover.io"></a>
+      </figure>
+
+      <br><br><br><br><br><br>
+      <br><br><br><br><br><br>
+      <br><br><br><br><br><br>
+      <br><br><br><br><br><br>
+
+      <a href="#top" class="scroll-to-top animate__animated animate__bounce animate__infinite animate__slow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up " viewBox="0 0 16 16">
+            <path d="M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659 4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z"/>
+          </svg>
+      </a>
+
+
+</body>
+</html>

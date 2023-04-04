@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background clip</title>
+    <style>
+        p{  
+            width: 400px;
+            height: 300px;
+            padding: 10px;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            font-size: 27px;
+            text-align: justify;
+            background: -webkit-linear-gradient(
+                30deg,
+                red,
+                orange,
+                lightgreen,
+                lightblue
+            );
+            -webkit-background-clip: text;
+            /* color: transparent; */
+            color: rgba(255, 255, 255, 0.205);
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laboriosam a accusamus expedita debitis, recusandae quia autem voluptates nihil nostrum blanditiis officia tempore. Dolor hic, corrupti nesciunt eos illo perspiciatis.</p>
+</body>
+</html>

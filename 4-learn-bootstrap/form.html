@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS Form</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-info">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="">
+                    <form action="" method="" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" class="form-control form-control-sm">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" id="email" class="form-control is-valid">
+                            <div class="valid-feedback">This is ok</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Your Password</label>
+                            <input type="password" id="password" class="form-control form-control-lg is-invalid">
+                            <div class="invalid-feedback">This is not ok</div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <label for="" class="form-label">Birthday</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="col-6">
+                                <label for="" class="form-label">Your Age</label>
+                                <input type="number" class="form-control">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Choose File</label>
+                            <input type="file" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <input id="datalist" class="form-control" list="dataOptions" placeholder="Search Your City" />
+                            <datalist id="dataOptions">
+                                <option value="Yangon"></option>
+                                <option value="Mandalay"></option>
+                                <option value="Bago"></option>
+                            </datalist>
+                        </div>
+                        <div class="mb-3">
+                            <select name="" id="" class="form-select">
+                                <option selected disabled>Choose Your Country</option>
+                                <option value="mm">Myanmar</option>
+                                <option value="th">Thai</option>
+                                <option value="indo">Indonesia</option>
+                                <option value="vtn">Vietnam</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check form-check-inline">
+                                <input type="checkbox" id="checkinputone" class="form-check-input" >
+                                <label for="checkinputone" class="form-check-label">Agree</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="checkbox" id="flexCheckIndeterminate" class="form-check-input">
+                                <label for="flexCheckIndeterminate" class="form-check-label">Disagree</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="" class="">Gender</label>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" id="genderm" class="form-check-input" name="radioinline">
+                                <label for="genderm" class="form-check-label">One</label>
+                            </div>
+                            <div class="form-check  form-check-inline">
+                                <input type="radio" id="genderf" class="form-check-input" name="radioinline">
+                                <label for="genderf" class="form-check-label">Two</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check form-switch">
+                                <input type="checkbox" id="switchone" class="form-check-input">
+                                <label for="switchone" class="form-check-label">Switch</label>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&family=Montserrat:wght@300;400;500;600;700&display=swap');
+// font-family: 'IBM Plex Serif', serif;
+// font-family: 'Montserrat', sans-serif;
+
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+// start navbar 
+    $font-family-sans-serif: 'Montserrat', sans-serif;
+    // $font-family-base: 'IBM Plex Serif', serif;
+    $navbar-nav-link-padding-x: 1.5rem;
+    $input-bg: rgba(250,250,250);
+    $input-group-addon-bg: rgba(250,250,250);
+    $input-border-color: rgba(250,250,250);
+    $input-border-radius: 2rem;
+// start navbar 
+
+// start blog section 
+    $container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        // xxl: 1320px
+    );
+
+    $secondary : rgba(237, 237, 237, 1);
+
+    $btn-border-radius-sm: 2em;
+    $btn-padding-x-sm: 0.8rem;
+    // $border-radius: 2rem;
+    $btn-border-radius: 2rem;
+    $btn-padding-x: 0.8rem;
+// end blog section 
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// For Custom Css
+    // start navbar
+        .brand-logos{
+            font-size: 2rem;
+        }
+
+        // input[type = "text"]:focus{
+        //     outline: none;
+        //     box-shadow: none;
+        //     border: none;
+        // }
+    // start navbar
+
+    // start blog section 
+        .font-serifs{
+            font-family: 'IBM Plex Serif', sans-serif;
+        }
+
+        .users{
+
+        }
+        .users img{
+            border-radius: 50%;
+            margin-left: -9px;
+            border: 2px solid #ffffff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        .users img:first-child{
+            margin: 0;
+        }
+
+        .text-truncates{          
+            overflow:hidden;
+            -webkit-box-orient: vertical;
+            display: block;
+            display: -webkit-box;
+            overflow: hidden !important;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+        }
+    // end blog section 
+
+    // Start Detail Page 
+        .personal-social-links a:hover{
+            color: #000000 !important;
+        }
+
+        .article-details.font-serifs p{
+            line-height: 2.5;
+        }
+
+        .article-details.font-serifs li{
+            margin-bottom: 1rem;
+        }
+    // End Detail Page 
+

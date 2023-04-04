@@ -1,0 +1,61 @@
+// variable
+$primary : "pink";
+$text-color : black;
+
+@import "header";
+@import "footer";
+
+.bg-primay{
+    background-color: $primary;
+}
+.text-primary{
+    color: $primary;
+}
+.border-primary{
+    border-color: $primary;
+}
+
+// nesting
+.navbar{
+
+    &:hover{
+        box-shadow: 0 0 5px;
+    }
+    .navbar-brand{
+         color: $text-color;
+    }
+
+    .navbar-nav{
+        color: $text-color;
+
+        .nav-item{
+            border: 1px solid $text-color;
+
+            .nav-link{
+                color: $text-color;
+
+                &:hover,&:active{
+                    color: pink;
+                }
+            }
+            
+        }
+    }
+}
+
+// mixin  => is like function but using scss's @rule @include
+
+@mixin btn($theme: tomato) {
+    background-color: $theme;
+    color: black;
+    border: 1px soild brown;
+}
+.btn-primary{
+    @include btn(blue);
+}
+.btn-secondary{
+    @include btn;
+}
+.btn-warning{
+    @include btn(gold);
+}
