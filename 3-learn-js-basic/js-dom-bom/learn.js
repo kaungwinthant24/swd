@@ -103,3 +103,11 @@
 // test.onclick = testAlertFun.bind(null, event, "hello", " world");
 
 // document.querySelector("ul").addEventListener("click", (e) => console.log(e));
+
+const button = document.querySelector(".btn");
+// console.log(button);
+const test = (e) => {
+  console.log(e.target.innerText);
+  button.removeEventListener("click", test);
+};
+button.addEventListener("click", test);
