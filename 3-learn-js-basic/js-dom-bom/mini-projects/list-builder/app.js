@@ -26,8 +26,8 @@ const createLi = (text) => {
     <label for="${dynamicId}" class="form-check-label">${text}</label>
   </div>
   <div class="btn-group">
-    <button type="button" class="btn btn-sm btn-outline-dark" onclick="deleteLi(event)"><i class="bi bi-trash3 pe-none"></i></button>
-    <button type="button" class="btn btn-sm btn-outline-dark" onclick="edit(event)"><i class="bi bi-pencil pe-none"></i></button>
+    <button class="btn btn-sm btn-outline-dark del-btns"><i class="bi bi-trash3 pe-none"></i></button>
+    <button class="btn btn-sm btn-outline-dark edit-btns" type="edit"><i class="bi bi-pencil pe-none"></i></button>
   </div>
   `;
 
@@ -72,19 +72,9 @@ const deleteLi = (event) => {
   }
 };
 
-// function for (if checked => line through label)
-const done = (event) => {
-  //   console.log(event.target.nextElementSibling);
-  //   console.log(event.target.nextElementSibling.classList);
-  event.target.nextElementSibling.classList.toggle(
-    "text-decoration-line-through"
-  );
-  count();
-};
-
 // function for edit innertext of li
 const edit = (event) => {
-  console.log(event.target);
+  // console.log(event.target);
   const old = event.target.closest("li").querySelector(".form-check-label");
   if (confirm("Do you want to edit?")) {
     const newText = prompt("Edit it", old.innerText);
@@ -95,7 +85,36 @@ const edit = (event) => {
   }
 };
 
+// function for (if checked => line through label)
+const done = (event) => {
+  //   console.log(event.target.nextElementSibling);
+  //   console.log(event.target.nextElementSibling.classList);
+  event.target.nextElementSibling.classList.toggle(
+    "text-decoration-line-through"
+  );
+  count();
+};
+
 datas.forEach((data) => lists.append(createLi(data)));
+
+// for edit and delete btn
+
+// this should not use because dynamic datas only affects and new li cann't affect
+// [...lists.children].forEach((list) => {
+//   list.querySelector(".del-btns").addEventListener("click", deleteLi);
+//   list.querySelector(".edit-btns").addEventListener("click", edit);
+// });
+
+// event delegation
+lists.addEventListener("click", (event) => {
+  if (event.target.classList.contains("del-btns")) {
+    console.log("to delete");
+    deleteLi(event);
+  } else if (event.target.getAttribute("type") === "edit") {
+    console.log("to edit");
+    edit(event);
+  }
+});
 
 // function for count
 const count = () => {

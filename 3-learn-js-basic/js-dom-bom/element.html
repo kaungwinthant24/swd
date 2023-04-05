@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event</title>
+  </head>
+  <body>
+    <!-- <form action="https://mms-it.com" method="">
+      <div>
+        <input type="text" id="" class="" name="a" />
+        <input type="text" id="" class="" name="b" />
+        <input type="text" id="" class="" name="c" />
+        <button type="submit" id="" class="">Submit</button>
+      </div>
+    </form> -->
+
+    <!-- ------------------- -->
+
+    <div class="box">
+      <h1>Heading</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet,
+        magnam officia. Nihil cupiditate error perferendis alias, voluptatum
+        quas quisquam, dolores atque neque, eaque mollitia labore sint dolore.
+        Dolores, est praesentium.
+      </p>
+      <input type="file" id="file" class="" />
+      <ul class="list" style="border: 2px solid black; padding: 20px">
+        <li
+          class="list-item"
+          style="border: 2px solid black; padding: 10px; border-bottom: none"
+        >
+          Apple
+        </li>
+        <li
+          class="list-item"
+          style="border: 2px solid black; padding: 10px; border-bottom: none"
+        >
+          Banana
+        </li>
+        <li class="list-item" style="border: 2px solid black; padding: 10px">
+          Orange
+        </li>
+      </ul>
+      <button type="button" id="upBtn" class="">Upload Profile</button>
+    </div>
+
+    <!-- js area start -->
+    <script>
+      //   const form = document.querySelector("form");
+      //   console.log(form);
+      //   form.addEventListener("submit", (e) => {
+      //     e.preventDefault();
+      //     const a = document.querySelector("[name='a']");
+      //     const b = document.querySelector("[name='b']");
+      //     const c = document.querySelector("[name='c']");
+      //     console.log(a.value, b.value, c.value);
+      //   });
+
+      //   ----------------
+
+      // event bubbling => event emits from bottom to top
+
+      const box = document.querySelector(".box");
+      const list = document.querySelector(".list");
+      const listItem = document.querySelector(".list-item");
+
+      // document.body.addEventListener("click", () =>
+      //   console.log("You click body")
+      // );
+      // box.addEventListener("click", () => console.log("You click box"));
+      // list.addEventListener("click", () => console.log("You click list"));
+      // listItem.addEventListener("click", () =>
+      //   console.log("You click listItem")
+      // );
+
+      //   ----------------
+
+      // event capturing => event emits from top to bottom
+
+      // document.body.addEventListener(
+      //   "click",
+      //   () => console.log("You click body"),
+      //   true
+      // );
+      // box.addEventListener("click", () => console.log("You click box"), true);
+      // list.addEventListener("click", () => console.log("You click list"), true);
+      // listItem.addEventListener(
+      //   "click",
+      //   () => console.log("You click listItem"),
+      //   true
+      // );
+
+      //   ----------------
+
+      // event probagation => stop from it
+
+      // document.body.addEventListener("click", () =>
+      //   console.log("You click body")
+      // );
+      // box.addEventListener("click", () => console.log("You click box"));
+      // list.addEventListener(
+      //   "click",
+      //   (event) => {
+      //     event.stopPropagation();
+      //     console.log("You click list");
+      //   },
+      //   true
+      // );
+      // listItem.addEventListener(
+      //   "click",
+      //   () => console.log("You click listItem"),
+      //   true
+      // );
+
+      //   ----------------
+
+      // Event listen to multi elements
+
+      // const lis = document.querySelectorAll(".list-item");
+      // console.log(lis);
+      // lis.forEach((li) => {
+      //   li.addEventListener("click", (event) =>
+      //     console.log(event.target.innerText)
+      //   );
+      // });
+
+      //   ----------------
+
+      // Multi Element listen
+
+      // const h1 = document.querySelector("h1");
+      // const events = ["click", "mouseenter", "mouseout"];
+      // events.forEach((event) => {
+      //   h1.addEventListener(event, (e) => {
+      //     console.log(e);
+      //   });
+      // });
+
+      //   ----------------
+
+      // click one and action to other
+
+      const file = document.querySelector("#file");
+      file.style.display = "none";
+      const upBtn = document.querySelector("#upBtn");
+      upBtn.addEventListener("click", (event) => {
+        file.click();
+      });
+
+      //   ----------------
+    </script>
+    <!-- js area end -->
+  </body>
+</html>
